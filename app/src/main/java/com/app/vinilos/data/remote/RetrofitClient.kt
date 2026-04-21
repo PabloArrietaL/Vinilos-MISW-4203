@@ -25,12 +25,14 @@ object RetrofitClient {
         .add(KotlinJsonAdapterFactory())
         .build()
 
-    val retrofit by lazy {
+    private val retrofit by lazy {
         Retrofit.Builder()
             .baseUrl(BASE_URL)
             .client(okHttp)
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
     }
+
+    val albumApi: AlbumApiService by lazy { retrofit.create(AlbumApiService::class.java) }
 
 }
