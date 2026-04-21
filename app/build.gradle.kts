@@ -71,4 +71,5 @@ dependencies {
 
     // Imágenes
     implementation(libs.glide)
+    implementation(libs.androidx.swiperefresh)
 }
