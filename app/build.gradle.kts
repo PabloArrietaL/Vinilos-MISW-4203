@@ -72,4 +72,13 @@ dependencies {
     // Imágenes
     implementation(libs.glide)
     implementation(libs.androidx.swiperefresh)
+
+    //Pruebas
+    androidTestImplementation(libs.androidx.espresso.contrib)
+    androidTestImplementation(libs.androidx.espresso.intents)
+    androidTestImplementation(libs.androidx.fragment.testing)
+    androidTestImplementation(libs.androidx.navigation.testing)
+    androidTestImplementation(libs.androidx.test.rules)
+    androidTestImplementation(libs.androidx.test.runner)
+    debugImplementation(libs.androidx.fragment.testing.manifest)
 }

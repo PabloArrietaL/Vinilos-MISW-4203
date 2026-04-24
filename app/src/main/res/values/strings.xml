@@ -2,4 +2,5 @@
     <string name="app_name">vinilos</string>
     <string name="home_hero_title">Vinilos</string>
     <string name="home_hero_subtitle">Tu catálogo musical</string>
+    <string name="home_card_albums">Albums Catalogue</string>
 </resources>
