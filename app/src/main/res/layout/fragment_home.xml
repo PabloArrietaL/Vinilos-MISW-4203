@@ -84,7 +84,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_marginStart="@dimen/spacing_md"
-                        android:text="Albums Catalogue"
+                        android:text="@string/home_card_albums"
                         android:textAppearance="?attr/textAppearanceBodyLarge" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
