@@ -27,7 +27,7 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_home_to_albums)
         }
         binding.cardArtists.setOnClickListener {
-            findNavController().navigate(R.id.action_home_to_artists)
+            //findNavController().navigate(R.id.action_home_to_artists)
         }
     }
 
