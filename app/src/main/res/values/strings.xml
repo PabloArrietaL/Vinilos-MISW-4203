@@ -3,4 +3,9 @@
     <string name="home_hero_title">Vinilos</string>
     <string name="home_hero_subtitle">Tu catálogo musical</string>
     <string name="home_card_albums">Albums Catalogue</string>
+    <string name="home_card_artists">Artists List</string>
+    <string name="artist_birth_year">b. %1$s</string>
+    <string name="artist_about">About</string>
+    <string name="artist_albums">Albums</string>
+    <string name="artist_no_albums">No albums registered.</string>
 </resources>

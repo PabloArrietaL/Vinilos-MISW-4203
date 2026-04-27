@@ -13,12 +13,35 @@
         <action
             android:id="@+id/action_home_to_albums"
             app:destination="@id/albumsCatalogueFragment" />
-
+        <action
+            android:id="@+id/action_home_to_artists"
+            app:destination="@id/artistsListFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/albumsCatalogueFragment"
         android:name="com.app.vinilos.ui.albums.catalogue.AlbumsCatalogueFragment"
         android:label="Albums"
-        tools:layout="@layout/fragment_albums_catalogue">
+        tools:layout="@layout/fragment_albums_catalogue" />
+
+    <fragment
+        android:id="@+id/artistsListFragment"
+        android:name="com.app.vinilos.ui.artists.list.ArtistsListFragment"
+        android:label="Artists"
+        tools:layout="@layout/fragment_artists_list">
+        <action
+            android:id="@+id/action_artistsList_to_artistDetail"
+            app:destination="@id/artistDetailFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/artistDetailFragment"
+        android:name="com.app.vinilos.ui.artists.detail.ArtistDetailFragment"
+        android:label="Artist Detail"
+        tools:layout="@layout/fragment_artist_detail">
+        <argument
+            android:name="artistId"
+            app:argType="integer" />
+    </fragment>
+
 </navigation>
