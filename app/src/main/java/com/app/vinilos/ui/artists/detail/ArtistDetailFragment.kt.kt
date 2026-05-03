@@ -12,6 +12,7 @@ import com.app.vinilos.R
 import com.app.vinilos.databinding.FragmentArtistDetailBinding
 import com.app.vinilos.di.ServiceLocator
 import com.app.vinilos.ui.common.UiState
+import kotlin.getValue
 
 class ArtistDetailFragment : Fragment() {
 
