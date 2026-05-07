@@ -76,8 +76,17 @@ class ArtistDetailFragment : Fragment() {
                         start()
                     }
 
+                    val glideUrl = if (artist.image.isNotEmpty()) {
+                        com.bumptech.glide.load.model.GlideUrl(
+                            artist.image.trim(),
+                            com.bumptech.glide.load.model.LazyHeaders.Builder()
+                                .addHeader("User-Agent", "Mozilla/5.0")
+                                .build()
+                        )
+                    } else null
+
                     com.bumptech.glide.Glide.with(binding.imgArtist)
-                        .load(artist.image)
+                        .load(glideUrl)
                         .placeholder(circularProgress)
                         .error(R.drawable.placeholder_circle)
                         .transition(com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade())

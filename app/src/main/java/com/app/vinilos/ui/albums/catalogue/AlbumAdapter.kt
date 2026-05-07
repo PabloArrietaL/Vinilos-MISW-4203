@@ -32,8 +32,17 @@ class AlbumAdapter(
                 start()
             }
 
+            val glideUrl = if (album.cover.isNotEmpty()) {
+                com.bumptech.glide.load.model.GlideUrl(
+                    album.cover.trim(),
+                    com.bumptech.glide.load.model.LazyHeaders.Builder()
+                        .addHeader("User-Agent", "Mozilla/5.0")
+                        .build()
+                )
+            } else null
+
             com.bumptech.glide.Glide.with(binding.imgCover)
-                .load(album.cover)
+                .load(glideUrl)
                 .placeholder(circularProgress)
                 .error(R.drawable.placeholder_square)
                 .transition(com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade())
