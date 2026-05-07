@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
     <color name="md_purple_40">#7C3AED</color>
-    <color name="md_purple_80">#D0BCFF</color>
     <color name="md_purple_10">#21005D</color>
     <color name="md_purple_90">#EADDFF</color>
     <color name="md_surface">#FFFBFE</color>
