@@ -32,6 +32,9 @@ class AlbumsCatalogueFragmentTest {
         )
 
         onView(withId(R.id.rvAlbums))
+            .perform(waitForRecyclerViewItems(10_000))
+
+        onView(withId(R.id.rvAlbums))
             .check(matches(isDisplayed()))
 
 
