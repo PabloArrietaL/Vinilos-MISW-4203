@@ -8,4 +8,8 @@
     <string name="artist_about">About</string>
     <string name="artist_albums">Albums</string>
     <string name="artist_no_albums">No albums registered.</string>
+    <string name="released_album_detail">Released</string>
+    <string name="genre">Genre</string>
+    <string name="label">Label</string>
+    <string name="tracks_album_detail">Tracks</string>
 </resources>

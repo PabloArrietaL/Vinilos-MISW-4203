@@ -42,7 +42,9 @@ class AlbumsCatalogueFragment : Fragment() {
         }
 
         adapter = AlbumAdapter { album ->
-            // TODO: navegar al detalle cuando la feature feature/albums-detail esté lista
+            val action = AlbumsCatalogueFragmentDirections
+                .actionAlbumsCatalogueFragmentToAlbumDetailFragment(album.id)
+            findNavController().navigate(action)
         }
 
         binding.rvAlbums.layoutManager = GridLayoutManager(requireContext(), 2)
