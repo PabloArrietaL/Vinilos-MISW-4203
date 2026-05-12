@@ -24,6 +24,9 @@
         android:label="Albums"
         tools:layout="@layout/fragment_albums_catalogue" />
 
+        <action
+            android:id="@+id/action_albumsCatalogueFragment_to_albumDetailFragment"
+            app:destination="@id/albumDetailFragment" />
     <fragment
         android:id="@+id/artistsListFragment"
         android:name="com.app.vinilos.ui.artists.list.ArtistsListFragment"
@@ -41,6 +44,16 @@
         tools:layout="@layout/fragment_artist_detail">
         <argument
             android:name="artistId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/albumDetailFragment"
+        android:name="com.app.vinilos.ui.albums.detail.AlbumDetailFragment"
+        android:label="AlbumDetailFragment">
+
+        <argument
+            android:name="albumId"
             app:argType="integer" />
     </fragment>
 
