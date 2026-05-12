@@ -102,5 +102,6 @@ dependencies {
     androidTestImplementation(libs.androidx.navigation.testing)
     androidTestImplementation(libs.androidx.test.rules)
     androidTestImplementation(libs.androidx.test.runner)
+    androidTestImplementation(libs.androidx.espresso.accessibility)
     debugImplementation(libs.androidx.fragment.testing.manifest)
 }

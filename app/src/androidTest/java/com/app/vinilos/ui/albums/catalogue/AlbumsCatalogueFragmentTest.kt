@@ -14,13 +14,14 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.app.vinilos.MainActivity
 import com.app.vinilos.R
+import com.app.vinilos.ui.AccessibilityTestBase
 import org.hamcrest.Matcher
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-class AlbumsCatalogueFragmentTest {
+class AlbumsCatalogueFragmentTest : AccessibilityTestBase() {
 
     @get:Rule
     val activityRule = ActivityScenarioRule(MainActivity::class.java)
