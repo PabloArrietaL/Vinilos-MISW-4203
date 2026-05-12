@@ -15,6 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:navigationIcon="@drawable/ic_arrow_back"
+            app:navigationContentDescription="@string/cd_nav_back"
             app:title="Album Detail"
             style="@style/Widget.Material3.Toolbar.Surface" />
 

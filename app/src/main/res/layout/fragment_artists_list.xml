@@ -14,6 +14,7 @@
             android:layout_height="?attr/actionBarSize"
             app:title="Artists"
             app:navigationIcon="@drawable/ic_arrow_back"
+            app:navigationContentDescription="@string/cd_nav_back"
             app:menu="@menu/menu_home_action"
             style="@style/Widget.Material3.Toolbar.Surface" />
     </com.google.android.material.appbar.AppBarLayout>
