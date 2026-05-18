@@ -1,0 +1,85 @@
+  bash arg: -p
+  bash arg: com.app.vinilos
+  bash arg: --throttle
+  bash arg: 300
+  bash arg: --pct-touch
+  bash arg: 60
+  bash arg: --pct-motion
+  bash arg: 20
+  bash arg: --pct-syskeys
+  bash arg: 0
+  bash arg: -s
+  bash arg: 12345
+  bash arg: -v
+  bash arg: 500
+args: [-p, com.app.vinilos, --throttle, 300, --pct-touch, 60, --pct-motion, 20, --pct-syskeys, 0, -s, 12345, -v, 500]
+ arg: "-p"
+ arg: "com.app.vinilos"
+ arg: "--throttle"
+ arg: "300"
+ arg: "--pct-touch"
+ arg: "60"
+ arg: "--pct-motion"
+ arg: "20"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-s"
+ arg: "12345"
+ arg: "-v"
+ arg: "500"
+data="com.app.vinilos"
+arg="--throttle" mCurArgData="null" mNextArg=3 argwas="--throttle" nextarg="300"
+data="300"
+arg="--pct-touch" mCurArgData="null" mNextArg=5 argwas="--pct-touch" nextarg="60"
+data="60"
+arg="--pct-motion" mCurArgData="null" mNextArg=7 argwas="--pct-motion" nextarg="20"
+data="20"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=9 argwas="--pct-syskeys" nextarg="0"
+data="0"
+data="12345"
+:Monkey: seed=12345 count=500
+:AllowPackage: com.app.vinilos
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 60.0%
+//   1: 20.0%
+//   2: 0.5479452%
+//   3: 4.109589%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 6.849315%
+//   7: 4.109589%
+//   8: -0.0%
+//   9: 0.5479452%
+//   10: 0.2739726%
+//   11: 3.5616438%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.app.vinilos/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.app.vinilos/.MainActivity } in package com.app.vinilos
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+    //[calendar_time:2026-05-18 13:21:17.079  system_uptime:2944623]
+    // Sending event #100
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.app.vinilos/.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.app.vinilos/.MainActivity } in package com.app.vinilos
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+    //[calendar_time:2026-05-18 13:21:25.479  system_uptime:2953021]
+    // Sending event #200
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+    //[calendar_time:2026-05-18 13:21:33.478  system_uptime:2961021]
+    // Sending event #300
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+    //[calendar_time:2026-05-18 13:21:42.352  system_uptime:2969894]
+    // Sending event #400
+    //[calendar_time:2026-05-18 13:21:42.659  system_uptime:2970200]
+    // Sending event #400
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+Events injected: 500
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=45460ms (0ms mobile, 0ms wifi, 45460ms not connected)
+// Monkey finished

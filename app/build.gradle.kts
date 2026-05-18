@@ -104,4 +104,5 @@ dependencies {
     androidTestImplementation(libs.androidx.test.runner)
     androidTestImplementation(libs.androidx.espresso.accessibility)
     debugImplementation(libs.androidx.fragment.testing.manifest)
+    androidTestImplementation(libs.androidx.uiautomator)
 }
