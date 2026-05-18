@@ -25,8 +25,8 @@ android {
         applicationId = "com.app.vinilos"
         minSdk = 26
         targetSdk = 36
-        versionCode = 3
-        versionName = "2.0.1"
+        versionCode = 4
+        versionName = "3.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -102,5 +102,7 @@ dependencies {
     androidTestImplementation(libs.androidx.navigation.testing)
     androidTestImplementation(libs.androidx.test.rules)
     androidTestImplementation(libs.androidx.test.runner)
+    androidTestImplementation(libs.androidx.espresso.accessibility)
     debugImplementation(libs.androidx.fragment.testing.manifest)
+    androidTestImplementation(libs.androidx.uiautomator)
 }
