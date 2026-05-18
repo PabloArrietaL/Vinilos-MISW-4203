@@ -13,7 +13,8 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
             app:navigationIcon="@drawable/ic_arrow_back"
             app:navigationContentDescription="@string/cd_nav_back"
             app:title="Album Detail"
@@ -62,6 +63,7 @@
 
             <TextView
                 android:id="@+id/tvName"
+                android:importantForAccessibility="no"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?attr/textAppearanceHeadlineSmall"
@@ -102,7 +104,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/released_album_detail"
                         android:textAppearance="?attr/textAppearanceLabelSmall"
-                        android:textColor="?attr/colorOutline" />
+                        android:textColor="?attr/colorOnSurfaceVariant" />
 
                     <TextView
                         android:id="@+id/tvReleaseDate"
@@ -124,7 +126,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/genre"
                         android:textAppearance="?attr/textAppearanceLabelSmall"
-                        android:textColor="?attr/colorOutline" />
+                        android:textColor="?attr/colorOnSurfaceVariant" />
 
                     <TextView
                         android:id="@+id/tvGenre"
@@ -146,7 +148,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/label"
                         android:textAppearance="?attr/textAppearanceLabelSmall"
-                        android:textColor="?attr/colorOutline" />
+                        android:textColor="?attr/colorOnSurfaceVariant" />
 
                     <TextView
                         android:id="@+id/tvRecordLabel"
